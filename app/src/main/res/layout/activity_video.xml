@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hire.bennett.myapplication.Video">
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30sp"
+                android:textSize="27sp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:text="Capture Video  📷"
+                android:textAlignment="center" />
+    <Button
+        android:id="@+id/captureVideo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        android:layout_weight="1"
+        android:onClick="captureVideo"
+        android:background="@drawable/capture" />
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="250dp"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="Upload" />
+
+
+
+            <TextView
+                android:id="@+id/record_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:padding="10dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:textSize="24sp" />
+
+
+            <br.com.bloder.magic.view.MagicButton
+                android:id="@+id/magic_button_youtube_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="100sp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                app:button_icon="@drawable/youtube"
+                app:button_icon_height="50dp"
+                app:button_icon_width="35dp"
+                app:expandable_area_color="@color/colorPrimary"
+                app:hide_text="Next 💛"
+                app:icon_button_color="@color/colorPrimaryDark"
+                app:magic_button_size="47dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

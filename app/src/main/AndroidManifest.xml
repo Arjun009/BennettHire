@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -12,14 +20,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
-        <activity android:name=".MainActivity">
+        <activity android:name="hire.bennett.myapplication.thankyou" android:screenOrientation="portrait" ></activity>
+        <activity android:name="hire.bennett.myapplication.scrollview" android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="hire.bennett.myapplication.splash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hire.bennett.myapplication.IntroActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="hire.bennett.myapplication.name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hire.bennett.myapplication.pdf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hire.bennett.myapplication.VideoPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="hire.bennett.myapplication.Video"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="hire.bennett.myapplication.MainActivity" />
     </application>
 
 </manifest>

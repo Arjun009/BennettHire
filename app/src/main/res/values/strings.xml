@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Bennett Hire</string>
+
+    <!--<string name="recent_news">Bennett Hire</string>-->
+    <!--<string name="in_news">Welcome to Bennett Hire. It has three sections to complete. \n 1. An Audio section where you read aloud a paragraph of text.\n2. A video Section where you get 30 sections to express yourself.\n3. A Resume section where you'll upload your resume.\n\nPreparation\n1. Please find a well-lit room with no background noise where you can complete this in one sitting.\n\n\nSo, are you ready ?</string>-->
+    <!--<string name="publish_date">2019-03-31 12:00:00</string>-->
+
+    <string name="recent_news">Mining Optimization Model</string>
+    <string name="in_news">
+
+
+        Welcome to Bennett Hire. It has three sections to complete. \n1. An Audio section where you read aloud a paragraph of text.\n2. A video Section where you get 30 seconds to express yourself.\n3. A Resume section where you will upload your resume.\n\nPreparation\n1. Please find a well-lit room with no background noise where you can complete this in one sitting.\n You cannot abandon, once you started the screening window. \n\nSo, are you ready ?
+
+</string>
+    <string name="publish_date">2018-06-30 12:00:00</string>
+
+
 </resources>

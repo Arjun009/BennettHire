@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hire.bennett.myapplication.thankyou">
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <pl.droidsonroids.gif.GifTextView
+                android:layout_width="400sp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="60dp"
+                android:layout_height="300sp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/gif" />
+
+
+
+
+            <TextView
+                android:id="@+id/thanks"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30sp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginTop="80dp"
+                android:text="Thankyou" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

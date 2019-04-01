@@ -1,80 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/captureAudio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="Start Recording"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context="hire.bennett.myapplication.MainActivity">
 
 
 
-    <Button
-        android:id="@+id/stoprecording"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Stop Recording"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/captureAudio" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/playaudio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Play Audio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stoprecording" />
-
-    <Button
-        android:id="@+id/stopaudio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="140dp"
-        android:text="Stop Audio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playaudio"
-        app:layout_constraintVertical_bias="0.03" />
-    <Button
-        android:id="@+id/upload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="140dp"
-
-        android:text="Upload"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stopaudio"
-        app:layout_constraintVertical_bias="0.03" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
 
-</android.support.constraint.ConstraintLayout>
+            <TextView
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30sp"
+                android:textSize="27sp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:text="Start Recording  🎵"
+                android:textAlignment="center" />
+
+
+
+            <TextView
+                android:id="@+id/phrase"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="40sp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:text=""
+            />
+
+
+
+
+
+            <Button
+                android:id="@+id/captureAudio"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_marginBottom="20sp"
+                android:layout_gravity="center"
+                android:background="@drawable/record"
+                android:enabled="true"
+                 />
+
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true">
+                <Button
+                    android:id="@+id/resetrecording"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="1" android:text="Reset">
+                </Button>
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Upload">
+                </Button>
+            </LinearLayout>
+
+            <br.com.bloder.magic.view.MagicButton
+                android:id="@+id/magic_button_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="100sp"
+                android:gravity="center"
+                app:button_icon="@drawable/youtube"
+                app:button_icon_height="50dp"
+                app:button_icon_width="35dp"
+                app:expandable_area_color="@color/colorPrimary"
+                app:hide_text="Next 💛"
+                app:icon_button_color="@color/colorPrimaryDark"
+                app:magic_button_size="47dp" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
